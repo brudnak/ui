@@ -4,9 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Educell</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo+2:400,500,700|Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+    <title>EduCell</title>
   </head>
   <body>
-    <h1>Initial Commit</h1>
+    <!-- start of container class -->
+    <div class="container">
+      <!-- start of cta class -->
+
+      <section class="cta">
+        <div class="text-holder">
+          <img src="img/logo.png" alt="EDUCELL Logo" />
+          <h1 id="line-1">Bridging the gap</h1>
+          <h1 id="line-2">Between social workers</h1>
+          <h1 id="line-3">And schools</h1>
+        </div>
+        <nav id="bottom-nav">
+          <a href="#">ABOUT</a>
+        </nav>
+      </section>
+
+      <!-- end of cta class -->
+
+      <!-- start of main-sidebar class -->
+      <aside>
+        <div class="sign-in">
+          <div id="greeting">
+            <h2>WELCOME BACK</h2>
+          </div>
+          <div class="sign-in-form">
+            <form action="#">
+              <div class="username">
+                <p>
+                  <label for="username">USERNAME</label>
+                </p>
+                <p>
+                  <input type="text" name="username" placeholder="USERNAME" />
+                </p>
+              </div>
+              <div class="password">
+                <p>
+                  <label for="username">Password</label>
+                </p>
+                <p>
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="*********"
+                  />
+                </p>
+              </div>
+              <div class="submit">
+                <p>
+                  <input type="submit" value="LOG IN" />
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </aside>
+      <!-- end of main-sidebar class -->
+    </div>
+    <!-- end of container class -->
   </body>
 </html>
