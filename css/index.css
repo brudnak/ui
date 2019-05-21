@@ -260,13 +260,13 @@ p {
     display: none;
   }
   .container .cta .text-holder h1 {
-    font-size: 4rem;
+    font-size: 2.6rem;
   }
   .container .cta .text-holder #line-1,
   .container .cta .text-holder #line-2,
   .container .cta .text-holder #line-3 {
     width: 100%;
-    padding: 20px 10px;
+    padding: 10px;
   }
 }
 .container aside {
@@ -354,7 +354,7 @@ p {
   .mobile-content a {
     text-decoration: none;
     background-color: #8daf96;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #fff;
     padding: 10px 30px;
     font-family: Roboto, sans-serif;
