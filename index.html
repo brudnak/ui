@@ -9,7 +9,21 @@
       rel="stylesheet"
     />
     <link href="css/index.css" rel="stylesheet" />
-    <title>EduCell</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="js/index.js" async></script>
+    <title>Educell</title>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
   </head>
   <body>
     <!-- start of container class -->
@@ -17,21 +31,30 @@
       <!-- start of cta class -->
 
       <section class="cta">
-        <div class="text-holder">
-          <img src="img/logo.png" alt="EDUCELL Logo" />
-          <h1 id="line-1">Bridging the gap</h1>
-          <h1 id="line-2">Between social workers</h1>
-          <h1 id="line-3">And schools</h1>
+        <div class="cta-wrapper">
+          <div class="text-holder">
+            <img src="img/logo.png" alt="EDUCELL Logo" />
+            <h1 id="line-1">Bridging the gap</h1>
+            <h1 id="line-2">Between social workers</h1>
+            <h1 id="line-3">And schools</h1>
+          </div>
+          <div class="sign-in-button">
+            <span
+              ><span class="chev-color"
+                ><i class="fas fa-chevron-left"></i></span
+              >SIGN IN</span
+            >
+          </div>
+          <nav id="bottom-nav">
+            <a href="#">ABOUT</a>
+          </nav>
         </div>
-        <nav id="bottom-nav">
-          <a href="#">ABOUT</a>
-        </nav>
       </section>
 
       <!-- end of cta class -->
 
       <!-- start of main-sidebar class -->
-      <aside>
+      <aside class="main-sidebar">
         <div class="sign-in">
           <div id="greeting">
             <h2>WELCOME BACK</h2>
