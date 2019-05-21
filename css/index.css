@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
@@ -159,7 +159,7 @@ p {
 }
 .container-about {
   margin: 0 auto;
-  width: 1000px;
+  width: 800px;
 }
 .top-nav-wrapper {
   display: none;
@@ -397,4 +397,38 @@ p {
     letter-spacing: 1px;
     word-spacing: 2px;
   }
+}
+.container-about .hero-image {
+  position: relative;
+}
+.container-about .hero-image h1 {
+  font-size: 148px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #434242;
+}
+.container-about .hero-image .cell-font {
+  font-weight: 100;
+  font-family: Roboto, sans-serif;
+}
+.container-about .text-block {
+  background: #fff;
+  position: absolute;
+  width: 90%;
+  bottom: 50%;
+  right: 5%;
+}
+.container-about .text-block p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.2rem;
+}
+.container-about .choose {
+  text-transform: uppercase;
+  color: #434242;
+  word-spacing: 7px;
+  margin: 4% 0%;
+}
+.container-about .educell-spacing {
+  word-spacing: 4px;
 }
