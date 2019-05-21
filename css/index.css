@@ -157,6 +157,35 @@ p {
   margin: 0 auto;
   width: 100%;
 }
+.top-nav-wrapper {
+  display: none;
+  border: 1px solid #707070;
+}
+@media (max-width: 667px) {
+  .top-nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #31363e;
+    align-items: center;
+  }
+  .top-nav-wrapper img {
+    width: 50px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .top-nav-wrapper #top-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-nav-wrapper #top-nav a {
+    text-decoration: none;
+    color: #8daf96;
+    font-size: 3rem;
+    border-bottom: 2px solid #707070;
+    margin-bottom: 10%;
+  }
+}
 #bottom-nav {
   display: flex;
   justify-content: center;
@@ -174,6 +203,11 @@ p {
   border-radius: 30px 30px 0 0;
   position: fixed;
   bottom: -12px;
+}
+@media (max-width: 667px) {
+  #bottom-nav a {
+    display: none;
+  }
 }
 .container {
   display: flex;
@@ -218,6 +252,23 @@ p {
 .container .cta .text-holder #line-3 {
   width: 65%;
 }
+@media (max-width: 667px) {
+  .container .cta .text-holder {
+    padding: 3%;
+  }
+  .container .cta .text-holder img {
+    display: none;
+  }
+  .container .cta .text-holder h1 {
+    font-size: 4rem;
+  }
+  .container .cta .text-holder #line-1,
+  .container .cta .text-holder #line-2,
+  .container .cta .text-holder #line-3 {
+    width: 100%;
+    padding: 20px 10px;
+  }
+}
 .container aside {
   width: 0%;
   display: flex;
@@ -255,11 +306,28 @@ p {
   font-size: 41px;
   font-family: "Roboto", sans-serif;
   font-weight: medium;
-  overflow-wrap: normal;
+  white-space: nowrap;
 }
 .container aside .sign-in-form {
   width: 90%;
   margin: 0 auto;
+}
+@media (max-width: 667px) {
+  .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container .cta {
+    height: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+  .container .sign-in-button {
+    display: none;
+  }
+  .container aside {
+    display: none;
+  }
 }
 .hide {
   animation-name: slideInRight !important;
@@ -272,5 +340,27 @@ p {
   }
   100% {
     width: 30%;
+  }
+}
+.mobile-content {
+  display: none;
+}
+@media (max-width: 667px) {
+  .mobile-content {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0%;
+  }
+  .mobile-content a {
+    text-decoration: none;
+    background-color: #8daf96;
+    font-size: 2.2rem;
+    color: #fff;
+    padding: 10px 30px;
+    font-family: Roboto, sans-serif;
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 4px black);
+    letter-spacing: 1px;
+    word-spacing: 2px;
   }
 }

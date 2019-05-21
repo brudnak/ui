@@ -51,6 +51,25 @@
       #line-3 {
         width: 65%;
       } // end of 3 h1 lines
+
+      @media @mobile {
+        padding: 3%;
+
+        img {
+          display: none;
+        }
+        h1 {
+          font-size: 4rem;
+        }
+
+        #line-1,
+        #line-2,
+        #line-3 {
+          width: 100%;
+          // margin: 0;
+          padding: 20px 10px;
+        }
+      }
     } // end text-holder
   } // end of cta class selector
 
@@ -95,7 +114,7 @@
       font-size: 41px;
       font-family: "Roboto", sans-serif;
       font-weight: medium;
-      overflow-wrap: normal;
+      white-space: nowrap;
     } // end of h2
 
     .sign-in-form {
@@ -103,6 +122,25 @@
       margin: 0 auto;
     }
   } // end of aside
+
+  @media @mobile {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .cta {
+      height: 100%;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .sign-in-button {
+      display: none;
+    }
+
+    aside {
+      display: none;
+    }
+  }
 } // end of container
 
 .hide {
@@ -110,13 +148,38 @@
   animation-name: slideInRight !important;
   animation-duration: 0.7s;
   width: 30% !important;
+
+  @keyframes slideInRight {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 30%;
+    }
+  }
 }
 
-@keyframes slideInRight {
-  0% {
-    width: 0%;
+.mobile-content {
+  display: none;
+}
+
+@media @mobile {
+  .mobile-content {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0%;
   }
-  100% {
-    width: 30%;
+
+  .mobile-content a {
+    text-decoration: none;
+    background-color: #8daf96;
+    font-size: 2.2rem;
+    color: #fff;
+    padding: 10px 30px;
+    font-family: Roboto, sans-serif;
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 4px black);
+    letter-spacing: 1px;
+    word-spacing: 2px;
   }
 }
