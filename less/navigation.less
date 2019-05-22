@@ -64,6 +64,18 @@
   nav {
     width: 60%;
   }
+
+  @media @mobile {
+    flex-direction: column;
+
+    .logo-container {
+      width: 100%;
+    }
+
+    .nav-container {
+      width: 100%;
+    }
+  }
 }
 
 .about-nav {
@@ -76,6 +88,20 @@
     text-decoration: none;
     font-size: 3rem;
     color: #8daf96;
+  }
+
+  @media @mobile {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+
+    a {
+      margin-bottom: 4%;
+    }
+    a:nth-of-type(1) {
+      margin-top: 4%;
+    }
   }
 }
 

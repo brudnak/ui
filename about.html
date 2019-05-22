@@ -25,6 +25,7 @@
     <![endif]-->
   </head>
   <body>
+    <script defer="defer" src="./components/Tabs/Tabs.js"></script>
     <!-- start of header -->
     <header>
       <div class="about-nav-wrapper">
@@ -59,42 +60,164 @@
         <h2 class="h2-header">
           Choose <span class="educell-spacing">Educell</span> for all students
         </h2>
-        <p>
-          Providing a quality education and stable environment to allow children
-          to thrive is no easy task. For many social workers, teachers, and
-          other care providers who reside in remote or low income areas this is
-          even more complicated. Fewer resources means fewer chances to share
-          information and provide the best opportunities for each student in a
-          timely fashion.
-        </p>
-        <p>
-          Wouldn’t it be wonderful if there was a way to bridge this gap and
-          bring effective communication and data sharing abilites to students
-          from all walks of life? Well, now there is! With EduCell teachers,
-          administrative staff, and social workers can share information about a
-          specific student in order to keep the communication lines open and
-          provide the very best outcomes for all children.
-        </p>
-        <h2 class="h2-header">So what does EduCell do</h2>
-        <p>
-          Well, to put it simply it provides an organized list of all students,
-          case workers, and educational staff. Users can access information
-          about a student’s age, grade, background story, current unresolved
-          issues, and suggestions for success. If you are a school admin you
-          will have the ability to add and delete students to keep your list up
-          to date. Caseworkers and staff will be able to add notes, send
-          messages, and provide suggestions for each student.
-        </p>
-        <h2 class="h2-header">EduCell is easy to use</h2>
-        <p>
-          After you log in using your personal credentials you will be able to
-          view the list by age, grade, or individual students. Student pictures
-          will help put a name to a face and ensure that notes are being added
-          to the correct casefile.Using the very simple buttons you can easily
-          add or delete your own notes as well as view the notes of others. When
-          you have finished updating the case files simply use the log out
-          button to ensure student confidentiality.
-        </p>
+        <div class="shown-paras">
+          <p>
+            Providing a quality education and stable environment to allow
+            children to thrive is no easy task. For many social workers,
+            teachers, and other care providers who reside in remote or low
+            income areas this is even more complicated. Fewer resources means
+            fewer chances to share information and provide the best
+            opportunities for each student in a timely fashion.
+          </p>
+          <p>
+            Wouldn’t it be wonderful if there was a way to bridge this gap and
+            bring effective communication and data sharing abilites to students
+            from all walks of life? Well, now there is! With EduCell teachers,
+            administrative staff, and social workers can share information about
+            a specific student in order to keep the communication lines open and
+            provide the very best outcomes for all children.
+          </p>
+        </div>
+      </section>
+      <div class="section">
+        <div class="tabs">
+          <div class="tabs-links">
+            <div class="tabs-link tabs-link-selected" data-tab="1">
+              Educell in Action
+            </div>
+            <div class="tabs-link" data-tab="2">Ease of use</div>
+          </div>
+          <div class="tabs-items">
+            <div class="tabs-item tabs-item-selected" data-tab="1">
+              <div class="tabs-item-title">So what does EduCell do?</div>
+              <div class="tabs-item-description">
+                <p>
+                  Well, to put it simply it provides an organized list of all
+                  students, case workers, and educational staff. Users can
+                  access information about a student’s age, grade, background
+                  story, current unresolved issues, and suggestions for success.
+                  If you are a school admin you will have the ability to add and
+                  delete students to keep your list up to date. Caseworkers and
+                  staff will be able to add notes, send messages, and provide
+                  suggestions for each student.
+                </p>
+              </div>
+            </div>
+            <div class="tabs-item" data-tab="2">
+              <div class="tabs-item-title">EduCell is easy to use!</div>
+              <div class="tabs-item-description">
+                <p>
+                  After you log in using your personal credentials you will be
+                  able to view the list by age, grade, or individual students.
+                  Student pictures will help put a name to a face and ensure
+                  that notes are being added to the correct casefile.Using the
+                  very simple buttons you can easily add or delete your own
+                  notes as well as view the notes of others. When you have
+                  finished updating the case files simply use the log out button
+                  to ensure student confidentiality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="h2-header">Meeet The Team</h2>
+      <section class="team">
+        <!-- Start of card 1 -->
+        <div class="team__card">
+          <h2>Team Leader</h2>
+          <p>Stephen Bondor</p>
+          <img
+            src="/img/team/bondor.png"
+            alt="Profile picture of Stephen Bondor - Team Lead"
+          />
+          <div class="card__icons">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-gitlab"></i></a>
+            <a href=""><i class="fab fa-bitbucket"></i></a>
+          </div>
+        </div>
+        <!-- End of card 1 -->
+
+        <!-- Start of card 2 -->
+        <div class="team__card">
+          <h2>Backend Architect</h2>
+          <p>Josefia Magagnoli</p>
+          <img
+            src="/img/team/josefia.png"
+            alt="Profile picture of Stephen Bondor - Team Lead"
+          />
+          <div class="card__icons">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-gitlab"></i></a>
+            <a href=""><i class="fab fa-bitbucket"></i></a>
+          </div>
+        </div>
+        <!-- End of card 2 -->
+
+        <!-- Start of card 3 -->
+        <div class="team__card">
+          <h2>Front End Architect</h2>
+          <p>Dakotah Hitze</p>
+          <img
+            src="/img/team/dakotah.png"
+            alt="Profile picture of Stephen Bondor - Team Lead"
+          />
+          <div class="card__icons">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-gitlab"></i></a>
+            <a href=""><i class="fab fa-bitbucket"></i></a>
+          </div>
+        </div>
+        <!-- End of card 3 -->
+
+        <!-- Start of card 4 -->
+        <div class="team__card">
+          <h2>UX Designer</h2>
+          <p>Luis Villafranca</p>
+          <img
+            src="/img/team/luis.png"
+            alt="Profile picture of Stephen Bondor - Team Lead"
+          />
+          <div class="card__icons">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-gitlab"></i></a>
+            <a href=""><i class="fab fa-bitbucket"></i></a>
+          </div>
+        </div>
+        <!-- End of card 4 -->
+
+        <!-- Start of card 5 -->
+        <div class="team__card">
+          <h2>UI Developer I</h2>
+          <p>Hunter Raffety</p>
+          <img
+            src="/img/team/hunter.png"
+            alt="Profile picture of Stephen Bondor - Team Lead"
+          />
+          <div class="card__icons">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-gitlab"></i></a>
+            <a href=""><i class="fab fa-bitbucket"></i></a>
+          </div>
+        </div>
+        <!-- End of card 5 -->
+
+        <!-- Start of card 6 -->
+        <div class="team__card">
+          <h2>UI Developer II</h2>
+          <p>Andrew Brudnak</p>
+          <img
+            src="/img/team/andrew.png"
+            alt="Profile picture of Stephen Bondor - Team Lead"
+          />
+          <div class="card__icons">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-gitlab"></i></a>
+            <a href=""><i class="fab fa-bitbucket"></i></a>
+          </div>
+        </div>
+        <!-- End of card 6 -->
       </section>
     </div>
     <!-- end of container-about class -->

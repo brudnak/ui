@@ -1,3 +1,60 @@
+.tabs {
+  width: 100%;
+}
+.tabs .tabs-items {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+@media (max-width: 667px) {
+  .tabs .tabs-items {
+    height: 380px;
+  }
+}
+.tabs .tabs-item {
+  display: none;
+  width: 75%;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: flex;
+  background-color: #434242;
+  width: 100%;
+}
+.tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: #434242;
+  border-right: 1px solid white;
+  color: #fff;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: hsl(0, 0.7518797%, 46.07843137%);
+}
+@media (max-width: 667px) {
+  .tabs .tabs-link {
+    width: 170px;
+  }
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid #434242;
+  background-color: #fff;
+  color: black;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: #fff;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -221,6 +278,17 @@ p {
 .about-nav-wrapper nav {
   width: 60%;
 }
+@media (max-width: 667px) {
+  .about-nav-wrapper {
+    flex-direction: column;
+  }
+  .about-nav-wrapper .logo-container {
+    width: 100%;
+  }
+  .about-nav-wrapper .nav-container {
+    width: 100%;
+  }
+}
 .about-nav {
   width: 80%;
   display: flex;
@@ -231,6 +299,20 @@ p {
   text-decoration: none;
   font-size: 3rem;
   color: #8daf96;
+}
+@media (max-width: 667px) {
+  .about-nav {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .about-nav a {
+    margin-bottom: 4%;
+  }
+  .about-nav a:nth-of-type(1) {
+    margin-top: 4%;
+  }
 }
 .nav-container {
   width: 90%;
@@ -411,6 +493,14 @@ p {
   font-weight: 100;
   font-family: Roboto, sans-serif;
 }
+@media (max-width: 667px) {
+  .container-about .hero-image img {
+    display: none;
+  }
+  .container-about .hero-image h1 {
+    font-size: 60px;
+  }
+}
 .container-about .text-block {
   background: #fff;
   position: absolute;
@@ -423,6 +513,11 @@ p {
   text-align: center;
   font-size: 2.2rem;
 }
+@media (max-width: 667px) {
+  .container-about .text-block {
+    display: none;
+  }
+}
 .container-about .h2-header {
   text-transform: uppercase;
   color: #434242;
@@ -431,4 +526,74 @@ p {
 }
 .container-about .educell-spacing {
   word-spacing: 4px;
+}
+.container-about .shown-paras {
+  margin: 4% 0%;
+}
+.container-about .shown-paras p {
+  font-size: 1.9rem;
+}
+.container-about .shown-paras p:nth-of-type(1) {
+  margin-bottom: 2%;
+}
+.container-about .team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container-about .team__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  color: #fff;
+  background-color: #434242;
+  width: 45%;
+  border-radius: 10px;
+  margin: 4% 0%;
+  filter: drop-shadow(1px 1px 4px black);
+}
+.container-about .team__card img {
+  width: 300px;
+  filter: drop-shadow(1px 1px 4px silver);
+  border: 0.5px solid silver;
+}
+.container-about .team__card a {
+  text-decoration: none;
+  color: #000;
+  margin: 0% 4%;
+  padding: 8px;
+  background-color: #8daf96;
+  filter: drop-shadow(1px 1px 4px black);
+  border-radius: 50%;
+}
+.container-about .team__card a i {
+  font-size: 2.9rem;
+}
+.container-about .team__card a:hover {
+  background-color: hsl(135.88235294, 17.5257732%, 81.96078431%);
+}
+.container-about .team__card p {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin: 1% 0%;
+  word-spacing: 11px;
+  letter-spacing: 4px;
+}
+@media (max-width: 667px) {
+  .container-about .team__card {
+    width: 100%;
+  }
+}
+.container-about .card__icons {
+  width: 100%;
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 667px) {
+  .container-about {
+    width: 100%;
+    padding: 0% 5%;
+  }
 }
