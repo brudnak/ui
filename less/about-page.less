@@ -1,0 +1,135 @@
+.container-about {
+  .hero-image {
+    position: relative;
+    h1 {
+      font-size: 148px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #434242;
+    }
+
+    .cell-font {
+      font-weight: 100;
+      font-family: Roboto, sans-serif;
+    }
+
+    @media @mobile {
+      img {
+        display: none;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+
+  .text-block {
+    background: #fff;
+    position: absolute;
+    width: 90%;
+    bottom: 50%;
+    right: 5%;
+    p {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.2rem;
+    }
+    @media @mobile {
+      display: none;
+    }
+  } // end of text block selector
+
+  .h2-header {
+    text-transform: uppercase;
+    color: #434242;
+    word-spacing: 7px;
+    margin: 4% 0%;
+  }
+
+  .educell-spacing {
+    word-spacing: 4px;
+  }
+
+  .shown-paras {
+    margin: 4% 0%;
+
+    p {
+      font-size: 1.9rem;
+    }
+
+    p:nth-of-type(1) {
+      margin-bottom: 2%;
+    }
+  }
+
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .team__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    color: #fff;
+    background-color: #434242;
+    width: 45%;
+    // padding: 20px;
+    border-radius: 10px;
+    margin: 4% 0%;
+    filter: drop-shadow(1px 1px 4px black);
+
+    img {
+      width: 300px;
+      filter: drop-shadow(1px 1px 4px silver);
+      border: 0.5px solid silver;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+      margin: 0% 4%;
+      padding: 8px;
+      // background: #434242;
+
+      // background-color: lighten(hsl(#434242), 5%);
+      background-color: #8daf96;
+      filter: drop-shadow(1px 1px 4px black);
+      border-radius: 50%;
+
+      i {
+        font-size: 2.9rem;
+      }
+    }
+    a:hover {
+      background-color: lighten(hsl(#8daf96), 20%);
+    }
+
+    p {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      margin: 1% 0%;
+      word-spacing: 11px;
+      letter-spacing: 4px;
+    }
+
+    @media @mobile {
+      width: 100%;
+    }
+  }
+
+  .card__icons {
+    width: 100%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media @mobile {
+    width: 100%;
+    padding: 0% 5%;
+  }
+} // end of container-about
